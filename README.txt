@@ -34,7 +34,7 @@ src/test/resources/features: Contiene los archivos de características de Cucumb
 
 Ejecución de las pruebas
 *************************
-Para ejecutar las pruebas, puedes hacerlo a través de la línea de comandos o desde tu IDE. Puedes usar el siguiente comando para ejecutar las pruebas desde la línea de comandos:
+Para ejecutar las pruebas, puedes hacerlo a través de la línea de comandos o desde tu IDE, haciendo clic en RUN en la ubicación del archivo Home.java. Puedes usar el siguiente comando para ejecutar las pruebas desde la línea de comandos:
 
 mvn clean test
 
