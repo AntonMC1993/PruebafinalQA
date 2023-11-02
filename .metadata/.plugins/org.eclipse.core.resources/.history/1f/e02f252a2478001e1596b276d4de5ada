@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.miproyecto</groupId>
+  <artifactId>bancocentraltest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>bctest</name>
+  <description>este proyecto es de testing</description>
+  <dependencies>
+    <!-- Dependencia de Selenium WebDriver -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.14.1</version> 
+    </dependency>
+
+    <!-- Dependencia de WebDriverManager para gestionar controladores automáticamente -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.0.3</version> 
+    </dependency>
+    
+    <!-- Dependencia de Cucumber-->
+    <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.14.0</version>
+    <scope>test</scope>
+</dependency>
+</dependencies>
+
+</project>

@@ -1,0 +1,12 @@
+
+@tag
+Feature: Validar sitio de Banco Central
+
+  @tag1
+  Scenario: Validar título del sitio
+    Given Abro el navegador Chrome
+    And Realizando esto mediante la opción RUN en archivo home.java
+    When Accedo al sitio web
+    Then Debería ver el título "Inicio - Banco Central de Chile"
+    And Debería ver el valor de la UF, UTM, Dólar observado y Euro
+

@@ -1,0 +1,47 @@
+package steps;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import static org.junit.Assert.assertEquals;
+
+public class BancoCentralStepDefinitions {
+
+    private WebDriver driver;
+
+    @Given("Abro el navegador Chrome")
+    public void abro_el_navegador_Chrome() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\antonella.munoz\\Desktop\\PruebaFinalQA\\Software\\chromedriver.exe");
+        driver = new ChromeDriver();
+    }
+
+    @When("Accedo al sitio web del Banco Central")
+    public void accedo_al_sitio_web_del_Banco_Central() {
+        driver.get("http://www.bcentral.cl");
+    }
+
+    @Then("Debería ver el título Inicio - Banco Central de Chile")
+    
+    public void debería_ver_el_título() {
+        String tituloEsperado = "Inicio - Banco Central de Chile";
+        String tituloReal = driver.getTitle();
+        assertEquals(tituloEsperado, tituloReal);
+    }
+
+    @Then("Debería ver el valor de la UF, UTM, Dólar observado y Euro")
+    public void debería_ver_el_valor_de_la_UF_UTM_Dólar_observado_y_Euro() {
+        WebElement ufElement = driver.findElement (By.xpath("//*[@id=\"_BcentralIndicadoresViewer_INSTANCE_pLcePZ0Eybi8_myTooltipDelegate\"]/div/div/div[1]/div/div/div[1]/div/p[2]"));
+        WebElement utmElement = driver.findElement (By.xpath("//*[@id=\"_BcentralIndicadoresViewer_INSTANCE_pLcePZ0Eybi8_myTooltipDelegate\"]/div/div/div[1]/div/div/div[2]/div/p[2]"));
+        WebElement dolarElement = driver.findElement (By.xpath("//*[@id=\"_BcentralIndicadoresViewer_INSTANCE_pLcePZ0Eybi8_myTooltipDelegate\"]/div/div/div[1]/div/div/div[3]/div/p[2]"));
+        WebElement euroElement = driver.findElement (By.xpath("//*[@id=\"_BcentralIndicadoresViewer_INSTANCE_pLcePZ0Eybi8_myTooltipDelegate\"]/div/div/div[1]/div/div/div[4]/div/p[2]"));
+
+        System.out.println("Valor UF: " + ufElement.getText());
+        System.out.println("Valor UTM: " + utmElement.getText());
+        System.out.println("Valor Dólar observado: " + dolarElement.getText());
+        System.out.println("Valor Euro: " + euroElement.getText());
+    }
+
+}

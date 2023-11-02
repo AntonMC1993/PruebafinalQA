@@ -1,0 +1,48 @@
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import static org.junit.Assert.assertEquals;
+
+public class BancoCentralStepDefinitions {
+
+    private WebDriver driver;
+
+    @Given("Abro el navegador Chrome")
+    public void abro_el_navegador_Chrome() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\antonella.munoz\\Desktop\\PruebaFinalQA\\Software\\chromedriver.exe");
+        driver = new ChromeDriver();
+    }
+
+    @When("Accedo al sitio web del Banco Central")
+    public void accedo_al_sitio_web_del_Banco_Central() {
+        driver.get("http://www.bcentral.cl");
+    }
+
+    @Then("Debería ver el título {string}")
+    public void debería_ver_el_título(String tituloEsperado) {
+        String tituloReal = driver.getTitle();
+        assertEquals(tituloEsperado, tituloReal);
+    }
+
+    @Then("Debería ver el valor de la UF, UTM, Dólar observado y Euro")
+    public void debería_ver_el_valor_de_la_UF_UTM_Dólar_observado_y_Euro() {
+        WebElement ufElement = driver.findElement(By.xpath("RUTA_DEL_ELEMENTO_UF"));
+        WebElement utmElement = driver.findElement(By.xpath("RUTA_DEL_ELEMENTO_UTM"));
+        WebElement dolarElement = driver.findElement(By.xpath("RUTA_DEL_ELEMENTO_DOLAR"));
+        WebElement euroElement = driver.findElement(By.xpath("RUTA_DEL_ELEMENTO_EURO"));
+
+        System.out.println("Valor UF: " + ufElement.getText());
+        System.out.println("Valor UTM: " + utmElement.getText());
+        System.out.println("Valor Dólar observado: " + dolarElement.getText());
+        System.out.println("Valor Euro: " + euroElement.getText());
+    }
+
+    @After
+    public void cerrarNavegador() {
+        driver.quit();
+    }
+}
