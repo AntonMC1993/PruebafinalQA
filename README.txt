@@ -5,6 +5,8 @@ Antes de continuar con la lectura, considerar que este README contiene dos secci
 
 Este proyecto tiene como objetivo realizar pruebas automatizadas en el sitio web del Banco Central de Chile utilizando Selenium y Cucumber.
 
+Luego de clonar este repositorio en su equipo, procure copiar la carpeta "Prueba postman" en su escritorio y eliminar la original de la carpeta principal, a fin de evitar errores.
+
 Requisitos previos
 *******************
 
@@ -105,6 +107,8 @@ Observaciones
 Asegúrate de que la URL base de la API y la API Key estén configuradas como variables de entorno en Postman.
 
 Los resultados de las pruebas se mostrarán en Postman y podrás revisarlos detenidamente desde allí.
+
+Asegúrate de separar la carpeta ''prueba postman" antes de ejecutar los proyectos.
 
 ¡Disfruta realizando tus pruebas automatizadas en APIs con Postman! Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en consultar.
 
