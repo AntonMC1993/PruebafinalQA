@@ -14,11 +14,14 @@ Requisitos previos
 *Maven
 *Google Chrome
 *Chromedriver (Asegúrate de que la versión de Chromedriver coincida con la versión de Chrome que tienes instalada)
-*Configuración del proyecto
+En la carpeta SOFTWARE se encuentra ChromeDriver y Selenium 
+
+Configuración del proyecto
+**************************
 
 2. Clona este repositorio en tu máquina local.
 
-3. Asegúrate de que el archivo chromedriver.exe esté ubicado en la siguiente ruta: C:\Users\<TU_USUARIO>\Desktop\PruebaFinalQA\Software\chromedriver.exe o actualiza la ruta en el archivo home.java en el método abro_el_navegador_Chrome().
+3. Asegúrate de que el archivo chromedriver.exe esté ubicado en la siguiente ruta: C:\Users\<TU_USUARIO>\Desktop\PruebaFinalQA\Software\chromedriver.exe o actualiza la ruta en el archivo home.java en el método abro_el_navegador_Chrome(). 
 
 4. Importa el proyecto a tu IDE (Eclipse, IntelliJ, etc.) como un proyecto Maven.
 
