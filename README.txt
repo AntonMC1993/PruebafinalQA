@@ -21,7 +21,7 @@ En la carpeta SOFTWARE se encuentra ChromeDriver y Selenium
 Configuración del proyecto
 **************************
 
-2. Clona este repositorio en tu máquina local.
+2. Clona este repositorio en tu máquina local. (clic botón derecho mouse-Git bash-git clone https://github.com/AntonMC1993/PruebafinalQA.git)
 
 3. Asegúrate de que el archivo chromedriver.exe esté ubicado en la siguiente ruta: C:\Users\<TU_USUARIO>\Desktop\PruebaFinalQA\Software\chromedriver.exe o actualiza la ruta en el archivo home.java en el método abro_el_navegador_Chrome(). 
 
