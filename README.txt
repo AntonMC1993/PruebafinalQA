@@ -5,7 +5,7 @@ Antes de continuar con la lectura, considerar que este README contiene dos secci
 
 Este proyecto tiene como objetivo realizar pruebas automatizadas en el sitio web del Banco Central de Chile utilizando Selenium y Cucumber.
 
-Luego de clonar este repositorio en su equipo, procure copiar la carpeta "Prueba postman" en su escritorio y eliminar la original de la carpeta principal, a fin de evitar errores.
+Luego de clonar este repositorio en su equipo, procure separar la carpeta "Prueba postman" de la carpeta principal, a fin de evitar errores.
 
 Requisitos previos
 *******************
