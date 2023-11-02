@@ -1,7 +1,7 @@
 I. Proyecto de Pruebas Automatizadas con Selenium y Cucumber
 **********************************************************
 
-Antes de continuar con la lectura, considerar que este README contiene dos secciones. La primera consiste en el ejercicio de Prueba Automatizada con Selenium y Cucumber, y la segunda consiste en un segundo ejercicio realizado con Postman.
+Antes de continuar con la lectura, considerar que este README contiene dos secciones. La primera consiste en el ejercicio de Prueba Automatizada con Selenium y Cucumber, y la segunda consiste en un ejercicio realizado con Postman.
 
 Este proyecto tiene como objetivo realizar pruebas automatizadas en el sitio web del Banco Central de Chile utilizando Selenium y Cucumber.
 
@@ -105,7 +105,7 @@ Los resultados de las pruebas se mostrarán en Postman y podrás revisarlos dete
 
 ¡Disfruta realizando tus pruebas automatizadas en APIs con Postman! Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en consultar.
 
-
+                                -------------------------HAPPY TESTING!!!-----------------------------
 
 
 
